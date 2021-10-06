@@ -5,7 +5,7 @@
              BackgroundColor="#232323">
 
     <Grid ColumnDefinitions="*, *"
-          RowDefinitions="100, 200, *, *, *, *, *">
+          RowDefinitions="100, 180, *, *, *, *, *">
 
         <Label Text="LANTERNA"
                Style="{StaticResource titulo}"           
@@ -14,7 +14,7 @@
                Grid.ColumnSpan="2" />
 
         <ImageButton x:Name="bntOnOff" Grid.Column="0" BackgroundColor="#232323" 
-                     Grid.Row="1" Grid.ColumnSpan="2" />
+                     Grid.Row="1" Grid.ColumnSpan="2" Clicked="bntOnOff_Clicked" />
 
         <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
                Text="Status da Bateria"
@@ -24,15 +24,9 @@
         <Label Grid.Row="4" Grid.Column="0" Text="Status da Bateria:" Style="{StaticResource textoCinza}" />
         <Label Grid.Row="5" Grid.Column="0" Text="Fonte Energia:" Style="{StaticResource textoCinza}" />
 
-
-        <Label x:Name="lbl_carga_restante" Grid.Row="3" Grid.Column="1" 
-               Text="80%" />
-
-        <Label x:Name="lbl_status_bateria" Grid.Row="4" Grid.Column="1" 
-               Text="Descarregando" />
-
-        <Label x:Name="lbl_fonte_energia" Grid.Row="5" Grid.Column="1" 
-               Text="Bateria" />
+        <Label x:Name="lbl_carga_restante" Grid.Row="3" Grid.Column="1" Text="80%" />
+        <Label x:Name="lbl_status_bateria" Grid.Row="4" Grid.Column="1" Text="Descarregando" />
+        <Label x:Name="lbl_fonte_energia" Grid.Row="5" Grid.Column="1" Text="Bateria" />
 
     </Grid>
 
